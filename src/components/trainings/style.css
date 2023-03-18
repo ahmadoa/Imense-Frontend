@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    /*navbar styles*/
+    .navWrapper{
+        @apply w-full min-h-[3.5rem] px-16 bg-white flex flex-row items-center shadow-md shadow-gray-200;
+    }
+
+    .searchBoxWrapper{
+        @apply min-w-[35%] h-8 flex flex-row items-center bg-lighter_gray rounded-md;
+    }
+
+    .navLinkWrapper{
+        @apply w-full flex flex-row items-center justify-between text-medium_gray font-semibold;
+    }
+
+    .profileSection{
+        @apply w-1/4 flex flex-row items-center justify-end gap-5;
+    }
+
+    /*info section styles*/
+    .selectWrap{
+        @apply select pl-2 h-9 min-h-[2.25rem] bg-white border border-light_gray text-dark focus:outline-none;
+    }
+
+    /*Question answer wrapper*/
+    .answerWrapper{
+        @apply w-full h-fit py-2 px-3 flex flex-row items-center justify-between bg-white text-darker_gray text-sm font-semibold rounded-lg border border-question_border;
+    }
+
+    /*custom answer checker */
+    .right:checked + label{
+    @apply bg-green-400;
+    }
+
+    .right:checked + label > .check{
+        @apply fill-white;
+    }
+
+    .wrong:checked + label{
+        @apply bg-green-400;
+    }
+    
+    .wrong:checked + label > .check{
+       @apply fill-white;
+    }
+}
