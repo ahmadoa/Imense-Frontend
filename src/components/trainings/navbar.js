@@ -100,7 +100,7 @@ function navbar() {
               <button
                 key={language.short}
                 className={
-                  language.short != "EN"
+                  language.short !== "EN"
                     ? `flex flex-row items-center text-bell_gray py-2 px-3 hover:bg-lighter_gray transition-all duration-300`
                     : `flex flex-row items-center py-1 px-3 hover:bg-lighter_gray transition-all duration-300`
                 }
@@ -109,6 +109,7 @@ function navbar() {
                   <img
                     src={language.flag}
                     className="h-full w-full bg-cover"
+                    alt={language.lang}
                   ></img>
                 </div>
                 <span>
@@ -124,7 +125,7 @@ function navbar() {
             tabIndex={0}
             className="btn btn-ghost p-0 focus:bg-transparent hover:bg-transparent w-fit"
           >
-            <img src={Profile} className="w-10 mr-1" />
+            <img src={Profile} className="w-10 mr-1" alt="profile image"/>
             <div className="flex flex-col text-start">
               <div className="text-base capitalize text-darker_gray">
                 blaise defloo

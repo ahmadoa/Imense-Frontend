@@ -99,7 +99,7 @@ export default function Question({ id, onDelete }) {
             onDrop={onDropImage}
           />
         </div>
-        {image != "" && (
+        {image !== "" && (
           <motion.div
             initial={{
               opacity: 0,

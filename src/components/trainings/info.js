@@ -160,7 +160,7 @@ function Info() {
             onDrop={onDropImage}
           />
         </div>
-        {image != "" && (
+        {image !== "" && (
           <motion.div
             initial={{
               opacity: 0,
@@ -201,7 +201,7 @@ function Info() {
             file={true}
           />
         </div>
-        {media != "" && (
+        {media !== "" && (
           <motion.div
             initial={{
               opacity: 0,
